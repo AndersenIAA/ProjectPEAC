@@ -1,13 +1,27 @@
 #include <stdio.h>
+#include <string.h>
+
 int main() {
 
-int name;
+    char name[200];
+    char name1[] = "bob";
 
-printf("Hello world!\n");
-printf("What is my name?\n");
-scanf("%s", &name);
-printf("My name is %s\n", &name);
+    printf("Hello world!\n");
+    printf("What is my name?\n");
+    fflush(stdout);
+    scanf("%s", &name);
 
-return 0;
+    if (strcmp(name, name1) == 0) {
+
+        printf("Hey Bob how's it going?");
+
+    }
+    else {
+
+        printf("My name is %s\n", &name);
+
+    }
+
+    return 0;
 
 }
