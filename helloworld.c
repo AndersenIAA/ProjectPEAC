@@ -3,9 +3,10 @@ int main() {
 
 int name;
 
-printf("hello world"\n);
+printf("Hello world!\n");
+printf("What is my name?\n");
 scanf("%s", &name);
-printf("My name is %s", &name);
+printf("My name is %s\n", &name);
 
 return 0;
 
