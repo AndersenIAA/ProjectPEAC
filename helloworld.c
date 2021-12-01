@@ -3,24 +3,72 @@
 
 int main() {
 
-    char name[200];
-    char name1[] = "bob";
+    char opcode[4];
 
-    printf("Hello world!\n");
-    printf("What is my name?\n");
+    //array of opcodes
+    char a[56][4] = {
+            "ADC",
+            "AND",
+            "ASL",
+            "BCC",
+            "BCS",
+            "BEQ",
+            "BIT",
+            "BMI",
+            "BNE",
+            "BPL",
+            "BRK",
+            "BVC",
+            "BVS",
+            "CLC",
+            "CLD",
+            "CLI",
+            "CLV",
+            "CMP",
+            "CPX",
+            "CPY",
+            "DEC",
+            "DEX",
+            "DEY",
+            "EOR",
+            "INC",
+            "INX",
+            "INY",
+            "JMP",
+            "JSR",
+            "LDA",
+            "LDX",
+            "LDY",
+            "LSR",
+            "NOP",
+            "ORA",
+            "PHA",
+            "PHP",
+            "PLA",
+            "PLP",
+            "ROL",
+            "ROR",
+            "RTI",
+            "RTS",
+            "SBC",
+            "SEC",
+            "SED",
+            "SEI",
+            "STA",
+            "STX",
+            "STY",
+            "TAX",
+            "TAY",
+            "TXA",
+            "TXS",
+            "TYA"
+    };
+
+
+    printf("Welcome to the Isaac's 6502 interpreter.\n");
+    printf("Please enter a line of hexedecimal data:\n");
     fflush(stdout);
-    scanf("%s", &name);
-
-    if (strcmp(name, name1) == 0) {
-
-        printf("Hey Bob how's it going?");
-
-    }
-    else {
-
-        printf("My name is %s\n", &name);
-
-    }
+    scanf("%s", &opcode);
 
     return 0;
 
