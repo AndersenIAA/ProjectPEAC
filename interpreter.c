@@ -77,6 +77,12 @@ int main() {
     //integer that represents the number created from the previous operation
     int prevnum;
 
+    //array of bytes storing 64k of ram
+    char ram1[65536];
+
+    //array of bytes storing 4k of rom
+    char rom1[4096]; //edit this array with hexadecimal numbers 
+
     printf("Welcome to the Isaac's 6502 interpreter.\n");
     printf("Please enter a line of hexedecimal data:\n");
     fflush(stdout);
